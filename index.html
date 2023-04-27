@@ -33,7 +33,17 @@
   </nav>
   
 </div>
+<section class="slider">
+  <div class="slider-container">
+    <div class="slide"><img src="https://picsum.photos/id/1018/1000/500"></div>
+    <div class="slide"><img src="https://picsum.photos/id/1015/1000/500"></div>
+    <div class="slide"><img src="https://picsum.photos/id/1019/1000/500"></div>
+  </div>
+</section>
 </header>
+
+
+
 <footer>
   <div class="footer-container">
     <div class="footer-section">
@@ -68,6 +78,16 @@
     <p>© 2023 PADMAVATI EXPORTS INC. All Rights Reserved.</p>
   </div>
 </footer>
+
+<script>
+  $(document).ready(function(){
+    $('.slider-container').slick({
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 2000
+    });
+  });
+</script>
 
 </body>
 </html>
